@@ -59,7 +59,7 @@ let height, weight, bmi, result;
 
 height = 1.63;
 weight = 55;
-bmi = weight / (height ^ 2);
+bmi = weight / Math.pow(height, 2);
 
 console.log("Your height is "+height+" m");
 console.log("Your weight is "+weight+"kg");
@@ -70,7 +70,7 @@ if(bmi < 18.5){
     result = "underweight :/";
 }
 else if(bmi >= 18.5 && bmi < 25){
-    result = "ormal, congrats!";
+    result = "normal, congrats!";
 }
 else if(bmi >= 25 && bmi < 30){
     result = "overweight :/";
